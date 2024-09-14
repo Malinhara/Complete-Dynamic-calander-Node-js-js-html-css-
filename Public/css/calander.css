@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cd__main {
+    position: relative;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6) !important;
+}
+
+#calendar {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.fc-event {
+    border: 1px solid #eee !important;
+}
+
+.fc-content {
+    display: flex; /* Display the event content as flex */
+    align-items: center; /* Align items vertically */
+    padding: 3px !important;
+}
+
+.fc-content .fc-title {
+    flex: 1; /* Allow the title to grow to fill available space */
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    text-align: left; /* Align text to the left */
+    font-size: 12px;
+    padding-left:3px;
+    font-weight: 500;
+}
+
+.fc-customButton-button {
+    font-size: 13px !important;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group>label {
+    margin-bottom: 10px;
+}
+
+#delete-modal .modal-footer > .btn {
+    border-radius: 3px !important;
+    padding: 0px 8px !important;
+    font-size: 15px;
+}
+
+.fc-scroller {
+    overflow-y: auto;
+}
+
+.context-menu {
+    position: absolute;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    display: none;
+}
+
+.context-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu ul>li {
+    display: block;
+    padding: 5px 15px;
+    list-style-type: none;
+    color: #333;
+    cursor: pointer;
+    transition: 0.10s;
+    font-size: 13px;
+}
+
+.context-menu ul>li:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+.fa,
+.fas {
+    font-size: 13px;
+    margin-right: 4px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    #calendar {
+        max-width: 90%;
+    }
+
+    .fc-content .fc-title {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fc-customButton-button {
+        font-size: 12px !important;
+    }
+
+    #calendar {
+        padding: 10px;
+    }
+
+    .context-menu ul>li {
+        font-size: 12px;
+    }
+
+    .fa,
+    .fas {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        padding: 8px;
+    }
+
+    .fc-customButton-button {
+        font-size: 11px !important;
+    }
+
+    .form-group>label {
+        font-size: 14px;
+    }
+
+    .context-menu ul>li {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .fa,
+    .fas {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+    #calendar {
+        padding: 5px;
+    }
+
+    .fc-customButton-button {
+        font-size: 10px !important;
+    }
+
+    .form-group>label {
+        font-size: 13px;
+    }
+
+    .context-menu ul>li {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    .fa,
+    .fas {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fc-customButton-button {
+        font-size: 9px !important;
+    }
+
+    .form-group>label {
+        font-size: 12px;
+    }
+
+    .context-menu ul>li {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .fa,
+    .fas {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "saloon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mindfusion/scheduling": "^2.0.4",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "flatted": "^3.3.1",
+    "mongoose": "^8.3.2",
+    "mongose": "^0.0.2-security",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "scheduler-library": "^1.2.2",
+    "twilio": "^5.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
