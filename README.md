@@ -1,4 +1,4 @@
-Install steps
+Installing steps
 
 1)git clone <url> <br> <br>
 2)npm install express<br> <br>
